@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Questrial';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/questrial-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/questrial-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C1F27;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul, li, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header {
+    background-color: transparent;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo-link {
+    text-decoration: none;
+}
+
+
+.header__calendar {
+    border-radius: 5px;
+    max-width: 200px;
+    width: 100%;
+    background-color: #7EB928;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header__date {
+    color: #ffffff;
+    font-family: 'Questrial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+
+/* Main */
+
+.main {
+}
+
+.establish__container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #7EB928;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.establish__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 34px;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.establish__text {
+    margin-top: 10px;
+    font-family: 'Questrial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.establish__number {
+    font-family: 'Questrial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+}
+
+
+
+
+/* Resident */
+
+
+
+.resident__mini-container {
+    position: absolute;
+    top: calc(0px + 200px);
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.resident__mini-right-container {
+    position: absolute;
+    top: calc(0px + 200px);
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.resident__left-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.resident__img {
+    width: 30px;
+    padding: 5px;
+    background-color: #7EB928;
+    border-radius: 5px;
+}
+
+.left__resident-item {
+    display: inline-block;
+}
+
+.left__resident {
+    max-width: 710px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+    border-radius: 20px;
+    gap: 20px;
+    background-color: #fff;
+    position: relative;
+
+}
+
+.left__resident::before {
+    content: "Residentlar";
+    display: inline-block;
+    color: #fff;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: #7EB928;
+    position: absolute;
+    top: calc(0px - 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Questrial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+}
+
+.resident__slash {
+    font-size: 40px;
+    color: #7EB928;
+}
+
+.resident__date {
+    display: inline-block;
+    background-color: #7EB928;
+    border-radius: 10px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Questrial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.resident__text {
+    font-family: 'Questrial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+}
+
+.resident__stats {
+    font-family: 'Questrial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.resident__date-plus {
+    padding: 15px;
+}
+
+.right__resident {
+    width: 500px;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    gap: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+.resident__right-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right__resident::before {
+    content: "IT Markazlar";
+    display: inline-block;
+    color: #fff;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: #7EB928;
+    position: absolute;
+    top: calc(0px - 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Questrial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+}
